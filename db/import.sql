@@ -1,9 +1,9 @@
-DROP DATABASE   /*!32312 IF EXISTS*/ Northwind;
+DROP DATABASE   /*!32312 IF EXISTS*/ northwind;
 
-CREATE DATABASE Northwind  CHAR SET utf8 COLLATE utf8_bin;
+CREATE DATABASE northwind  CHAR SET utf8 COLLATE utf8_bin;
 
 
-USE Northwind;
+USE northwind;
 
 CREATE TABLE categories (
                           categoryId INT AUTO_INCREMENT NOT NULL
