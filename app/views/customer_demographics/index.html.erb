@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Customer Demographics</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @customer_demographics.each do |customer_demographic| %>
+      <tr>
+        <td><%= link_to 'Show', customer_demographic %></td>
+        <td><%= link_to 'Edit', edit_customer_demographic_path(customer_demographic) %></td>
+        <td><%= link_to 'Destroy', customer_demographic, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Customer Demographic', new_customer_demographic_path %>

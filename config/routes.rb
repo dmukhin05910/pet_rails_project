@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :customer_demographics
+  resources :cust_cust_demographics
   resources :order_details
   resources :sales_orders
   resources :shippers
@@ -6,9 +8,7 @@ Rails.application.routes.draw do
   resources :suppliers
   resources :employee_territories
   resources :employees
-  resources :cust_cust_demographies
   resources :customers
-  resources :customer_demographies
   resources :territories
   resources :regions
   resources :categories

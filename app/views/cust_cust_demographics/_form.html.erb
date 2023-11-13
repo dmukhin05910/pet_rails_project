@@ -1,0 +1,17 @@
+<%= form_with(model: cust_cust_demographic) do |form| %>
+  <% if cust_cust_demographic.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(cust_cust_demographic.errors.count, "error") %> prohibited this cust_cust_demographic from being saved:</h2>
+
+      <ul>
+        <% cust_cust_demographic.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

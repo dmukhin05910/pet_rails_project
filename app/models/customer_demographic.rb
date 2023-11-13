@@ -1,0 +1,2 @@
+class CustomerDemographic < ApplicationRecord
+end

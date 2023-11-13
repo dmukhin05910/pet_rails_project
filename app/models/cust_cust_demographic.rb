@@ -1,0 +1,2 @@
+class CustCustDemographic < ApplicationRecord
+end

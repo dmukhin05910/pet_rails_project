@@ -1,2 +1,0 @@
-class CustCustDemography < ApplicationRecord
-end
