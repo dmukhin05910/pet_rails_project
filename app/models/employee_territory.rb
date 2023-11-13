@@ -1,0 +1,2 @@
+class EmployeeTerritory < ApplicationRecord
+end

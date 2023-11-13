@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Cust Cust Demographies</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cust_cust_demographies.each do |cust_cust_demography| %>
+      <tr>
+        <td><%= link_to 'Show', cust_cust_demography %></td>
+        <td><%= link_to 'Edit', edit_cust_cust_demography_path(cust_cust_demography) %></td>
+        <td><%= link_to 'Destroy', cust_cust_demography, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cust Cust Demography', new_cust_cust_demography_path %>

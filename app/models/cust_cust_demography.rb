@@ -1,0 +1,2 @@
+class CustCustDemography < ApplicationRecord
+end
